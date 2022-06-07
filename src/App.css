@@ -7,7 +7,7 @@ body {
   font-family: Helvetica, sans-serif;
   height: 100vh;
   width: 100vw;
-  background-color: whitesmoke;
+  background-color: rgb(233, 245, 252);
 }
 
 .main-container {
@@ -17,8 +17,14 @@ body {
   flex-direction: column;
 }
 .title{
-  border-bottom: 3px solid rgb(101, 188, 238);
+  
   letter-spacing: 2px;
+  font-size: larger;
+}
+.underline{
+  border-bottom: 3px solid rgb(101, 188, 238);
+  width:180px;
+  margin-left: 25px;
 }
 .img-container{
   position: relative;
@@ -38,25 +44,40 @@ body {
   text-align: center;
   background-color: white;
   padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .img-container::before {
   content:'';
   width: 100%;
   height: 100%;
-  background: lightskyblue;
+  background: rgb(101, 188, 238);
   position:absolute;
-  top:-0.1rem;
+  top:0.2rem;
   right:-0.5rem;
   border-radius: 50%;
 }
 img#author-img {
   width: 150px;
   height: 150px;
-  border: 2px solid rgb(101, 188, 238);
   border-radius: 50%;
   margin-top: 10px;
   object-fit: cover;
   position: relative;
+}
+.quote-icon{
+  position:absolute;
+  top:20px;
+  left:0;
+  color:white;
+}
+span{
+  background-color: rgb(101, 188, 238);
+  width:2.5rem;
+  height:2.5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items:center;
 }
 h4#author {
   letter-spacing: 2px;
@@ -69,7 +90,7 @@ p#job-title {
   color: rgb(101, 188, 238);
 }
 #review{
-  color:rgb(179, 172, 172);
+  color:rgb(166, 170, 170);
 }
 
 .btn-wrapper {
@@ -85,7 +106,7 @@ p#job-title {
 }
 button#random-btn {
   color: rgb(101, 188, 238);
-  background-color: lightcyan;
+  background-color: rgb(232, 253, 253);
   padding: 5px;
   border: 1px solid rgb(101, 188, 238);
   border-radius: 5px;
